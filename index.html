@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+        <!-- CSS -->
+        <!-- Add Material font (Roboto) and Material icon as needed -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Add Material CSS, replace Bootstrap CSS -->
+        <link href="css/material.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="card" id="new-customer-form" style="width:80%;height:40rem;display:none;">
+                <div class="card-body">
+                    
+                    <form method="post">
+                      <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" name="firstname" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" name="lastname" class="form-control" placeholder="Last name">
+                            </div>
+                          </div> <br>
+                        <input type="email" class="form-control" name="email" aria-describedby="email" placeholder="Email Address">
+                      </div>
+                      <div class="form-group">
+                        <input type="number" class="form-control" name="number" placeholder="Mobile Number">
+                      </div><br>
+                      <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <br><br><button type="submit" class="btn btn-info" name="submit-form">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="cancel" class="btn btn-info" id="cancel-form">Cancel</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="btn btn-float" id="new-customer-button" >+</div>
+            <div class="card" style="width:100%; margin-bottom:1rem;">
+                <div class="card">
+                    <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title that wraps to a new line</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-outline-primary">CONTACT</a>
+                        <a href="#" class="btn btn-outline-primary">EDIT</a>
+                        <a href="#" class="btn btn-outline-primary">SHARE</a>
+                        <a href="#" class="btn btn-outline-primary">DELETE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width:100%; margin-bottom:1rem;">
+                <div class="card">
+                    <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title that wraps to a new line</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-outline-primary">CONTACT</a>
+                        <a href="#" class="btn btn-outline-primary">EDIT</a>
+                        <a href="#" class="btn btn-outline-primary">SHARE</a>
+                        <a href="#" class="btn btn-outline-primary">DELETE</a>
+                    </div>
+                </div>
+            </div><div>
+
+            <div class="card" style="width:100%; margin-bottom:1rem;">
+                <div class="card">
+                    <img class="card-img-top" src="img/test.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title that wraps to a new line</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-outline-primary">CONTACT</a>
+                        <a href="#" class="btn btn-outline-primary">EDIT</a>
+                        <a href="#" class="btn btn-outline-primary">SHARE</a>
+                        <a href="#" class="btn btn-outline-primary">DELETE</a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+        <script src="/material/js/material.min.js"></script>
+        <script>
+                $(document).ready(function(){                     
+                  $(function(){
+                     $("#submit-form").click(function(e){
+                        $("#new-customer-form").fadeToggle(100);
+            });
+                     $("#cancel-form").click(function(e){
+                        $("#new-customer-form").fadeToggle(100);
+            });
+                     $("#new-customer-button").click(function(e){
+                        $("#new-customer-form").fadeToggle(100);
+            });
+          });
+        });
+    </script>
+    </body>
+</html>
